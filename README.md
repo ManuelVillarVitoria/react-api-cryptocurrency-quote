@@ -14,7 +14,7 @@ _5.-Consulting the API with the quote._
 
 _6.-Displaying the result in the UI._
 
-_7.-Adding a Spinner._
+_7.-Adding a Spinner(Spinkit)._
 
 _- Have been used **Functional Components**, **Hooks useState, useEffect & Custom(own Hooks)**, **Styled Components** and  **Axios + Async/Await** in this project._
 
