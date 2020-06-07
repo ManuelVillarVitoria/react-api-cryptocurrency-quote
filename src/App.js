@@ -3,6 +3,7 @@ import styled from '@emotion/styled'//npm i @emotion/core @emotion/styled;
 import axios from 'axios';
 import imagen from './cryptomonedas.png';
 import Formulario from './components/Formulario';
+import Cotizacion from './components/Cotizacion';
 
 const Contenedor = styled.div `
   max-width: 900px;
@@ -41,6 +42,7 @@ function App() {
 
   const [moneda, guardarMoneda] = useState('');
   const [criptomoneda, guardarCriptomoneda] = useState('');
+  const [resultado, guardarResultado] = useState({});
 
   useEffect(() => {
 
@@ -55,7 +57,7 @@ function App() {
 
       const res = await axios.get(url);
 
-      console.log(res.data.DISPLAY[criptomoneda][moneda])
+      guardarResultado(res.data.DISPLAY[criptomoneda][moneda])
     }
 
     cotizarCriptomoneda();
@@ -73,9 +75,14 @@ function App() {
       </div>
       <div>
         <Heading>Cotiza Criptomonedas al Instante</Heading>
+
         <Formulario 
           guardarMoneda={guardarMoneda}
           guardarCriptomoneda={guardarCriptomoneda}
+        />
+
+        <Cotizacion 
+          resultado={resultado}
         />
       </div>
     </Contenedor>

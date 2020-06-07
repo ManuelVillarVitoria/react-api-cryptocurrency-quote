@@ -6,7 +6,7 @@ _1.-Creating,reading and validating the form._
 
 _2.-Creating 2 Custom Hooks for building the 'Selects' of the form, one for coins and the other one for the cryptocoins._
 
-_3.-Adding Styled Components to the main content, Components and Custom Hooks. Adding CCS to the summary._
+_3.-Adding 'Styled Components' to the main content, Components and Custom Hooks._
 
 _4.-Passing the quoted securities to an 'Effect'._
 
