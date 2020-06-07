@@ -19,7 +19,7 @@ _7.-Adding a Spinner(Spinkit)._
 _- Have been used **Functional Components**, **Hooks useState, useEffect & Custom(own Hooks)**, **Styled Components** and  **Axios + Async/Await** in this project._
 
 
-* ### `Deployment:` 
+* ### `Deployment:` **https://loving-roentgen-cf073c.netlify.app/** 
 
 
 ## Settings 🔧
