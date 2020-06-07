@@ -58,7 +58,9 @@ _The technologies used to create the project have been the following:_
 
 ## Authors ✒️
 
-* _Manuel Villar Vitoria_
+_The project is from the Udemy course (https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/)_
+
+* **Manuel Villar Vitoria** - Initial work done following the tutorial.
 
 
 ## Expressions of gratitude 🎁

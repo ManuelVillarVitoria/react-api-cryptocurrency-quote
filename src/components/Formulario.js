@@ -24,7 +24,7 @@ const Boton = styled.input `
     }
 `;
 
-const Formulario = () => {
+const Formulario = ({guardarCriptomoneda, guardarMoneda}) => {
 
     //State del listado de Criptomonedas
     const [listacripto, guardarCriptomonedas] = useState([]);
@@ -49,6 +49,8 @@ const Formulario = () => {
     useEffect(() => {
 
         const consultarAPI = async () => {
+            //https://min-api.cryptocompare.com/documentation?key=Toplists&cat=TopTotalMktCapEndpointFull
+            //Para que nos de la API las 10 criptomonedas más importantes para mostrarlas en el Select
             const url = 'https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD';
 
             const res = await axios(url);
@@ -71,6 +73,8 @@ const Formulario = () => {
         
         //pasar los datos al componente principal
         guardarError(false);
+        guardarCriptomoneda(criptomoneda);
+        guardarMoneda(moneda);
     }
 
 
